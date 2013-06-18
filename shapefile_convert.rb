@@ -10,7 +10,9 @@ class ShapefileConverter
   def convert_file()
     puts "srid: #{@srid}"
     srs_database = RGeo::CoordSys::SRSDatabase::Proj4Data.new('epsg')
-    shp_factory = RGeo::Geographic.projected_factory(:projection_proj4 => "+proj=lcc +lat_1=41.7 +lat_2=40.43333333333333 +lat_0=39.66666666666666 +lon_0=-82.5 +x_0=600000 +y_0=0 +ellps=GRS80 +datum=NAD83 +to_meter=0.3048006096012192 +no_defs"
+    shp_factory = RGeo::Geographic.projected_factory(:srs_database => srs_database,
+                                                     :projection_srid => @srid
+                                                     #:projection_proj4 => "+proj=lcc +lat_1=41.7 +lat_2=40.43333333333333 +lat_0=39.66666666666666 +lon_0=-82.5 +x_0=600000 +y_0=0 +ellps=GRS80 +datum=NAD83 +to_meter=0.3048006096012192 +no_defs"
                                                      )
     RGeo::Shapefile::Reader.open(@shpfile, factory: shp_factory.projection_factory) do |file|
       puts "File contains #{file.num_records} records."
@@ -70,5 +72,5 @@ class MPSSCShapefileConverter < ShapefileConverter
   end
 end
 
-sc = MPSSCShapefileConverter.new
+sc = CVNPShapefileConverter.new
 sc.convert_file()

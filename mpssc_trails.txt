@@ -1,9 +1,0 @@
-NAME1	LENGTH	SOURCE	GEOM
-Pheasant Run	1.2	MSSCC
-Indian Spring	2.2	MSSCC
-Gorge	0.0	MSSCC
-Gorge	0.0	MSSCC
-Gorge	0.0	MSSCC
-Gorge	0.0	MSSCC
-Highbridge	0.0	MSSCC
-Rock Creek Trail	1.2	MSSCC
