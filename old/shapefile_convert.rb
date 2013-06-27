@@ -24,11 +24,6 @@ class ShapefileConverter
           puts "record number #{record.index}:"
           puts "  Attributes: #{record.attributes.inspect}"
           puts "---"
-          puts record.geometry.inspect
-          puts "xxx"
-          #factory3857 = RGeo::Geographic.spherical_factory(srid: 3857)
-          
-          #proj_record = RGeo::Feature.cast(record.geometry, {:factory => factory3857, :project => true})
 
           write_array = Array.new
           @shapefile_field_names.each do |key|
@@ -37,9 +32,8 @@ class ShapefileConverter
           write_array.push(@source_id)
        
           proj_geom = shp_factory.unproject(record.geometry) 
-          puts proj_geom.inspect 
-          print "----------------------------------------------------\n\n\n"
-          #write_array.push(proj_record.as_text)
+
+          write_array.push(proj_geom.as_text)
           outfile.write(write_array.join("\t"))
           outfile.write("\n")
         end
