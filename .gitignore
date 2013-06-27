@@ -1,2 +1,4 @@
 old/
-.csv
+*.csv
+*.geojson
+*.old
