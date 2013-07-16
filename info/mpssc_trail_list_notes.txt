@@ -1,0 +1,56 @@
+Web Name : Shapefile Name
+---------------
+Adam Run : Adam Run Trail
+Alder : (missing from Goodyear Heights)
+Bike & Hike Trail
+Bridle : Bridle Trail - Silve
+Buckeye : Buckeye Trail
+Buttonbush : Buttonbush
+Cherry Lane : (merged into Nature Realm)
+Chippewa : Chippewa Trail
+Chuckery : (missing from Cascade South)
+XXXX  : County Home Connecto 
+Cuyahoga :
+Daffodil : Daffodil Trail
+Deer Run : Deer Run Trail
+Dogwood : Dogwood Trail
+XXXX  : Entry Trails Firesto
+Fernwood : 
+Glens : Glens Trail
+Gorge : Gorge
+XXXX : Gravel Loop
+Highbridge : Highbridge
+Indian Spring : Indian Spring
+Jogging : Jogging Trail
+XXXX : LP Bridle Trail
+Ledges : Ledges Trail
+Meadow : Meadow Trail
+Meadow Loop : Meadow Loop
+Mingo : Mingo Trail
+XXXX : Nature Realm
+Old Mill : Old Mill Trail
+Overlook : 
+Oxbow : 
+Parcours : Parcours Trail
+Pheasant Run : Pheasant Run
+Piney Woods : 
+Prairie : Prairie Trail
+Quarry : Quarry Trail
+Redwing : Redwing Trail
+XXXX : Riding Run Trail
+XXXX : Riding Run Trails
+Rock Creek : Rock Creek Trail 
+Schumacher : 
+Seneca : Seneca Trail
+XXXX : South Connector - MF
+Spring Hollow : 
+Sugarbush : Sugarbush
+Towpath Trail : Ohio & Erie Canal To
+XXXX : Valley Bridle Trails
+Valley Link : Valley Link
+Walking : Walking Course
+Willow : Willow Trail
+
+
+On Web, not in Shapefile: 10
+In Shapefile, not on web: 7

@@ -1,0 +1,47 @@
+Web Name : Shapefile Name
+---------------
+Adam Run,1,MPSSC
+Alder,1,MPSSC
+Bike & Hike Trail,1,MPSSC
+Bridle,1,MPSSC
+Buckeye,1,MPSSC
+Buttonbush,1,MPSSC
+Cherry Lane,1,MPSSC
+Chippewa,1,MPSSC
+Chuckery ,1,MPSSC
+Cuyahoga,1,MPSSC
+Daffodil,1,MPSSC
+Deer Run,1,MPSSC
+Dogwood ,1,MPSSC
+Fernwood,1,MPSSC
+Glens,1,MPSSC
+Gorge,1,MPSSC
+Highbridge,1,MPSSC
+Indian Spring,1,MPSSC
+Jogging,1,MPSSC
+Ledges,1,MPSSC
+Meadow,1,MPSSC
+Meadow Loop,1,MPSSC
+Mingo,1,MPSSC
+Old Mill,1,MPSSC
+Overlook,1,MPSSC
+Oxbow,1,MPSSC
+Parcours,1,MPSSC
+Pheasant Run,1,MPSSC
+Piney Woods,1,MPSSC
+Prairie,1,MPSSC
+Quarry,1,MPSSC
+Redwing,1,MPSSC
+Rock Creek,1,MPSSC
+Schumacher,1,MPSSC
+Seneca,1,MPSSC
+Spring Hollow,1,MPSSC
+Sugarbush,1,MPSSC
+Towpath Trail,1,MPSSC
+Valley Link,1,MPSSC
+Walking,1,MPSSC
+Willow,1,MPSSC
+
+
+On Web, not in Shapefile: 10
+In Shapefile, not on web: 7
