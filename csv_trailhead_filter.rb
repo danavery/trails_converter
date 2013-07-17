@@ -20,7 +20,7 @@ CSV.open("./summit_trailheads.csv", "w") do |csv|
     csv << [row["Comment"], row["Trail_Assoc_1"], row["Trail_Assoc_2"], row["Trail_Assoc_3"], row["WKT"], "CVNP"]
   end
 
-  CSV.foreach("./mpssc_trailheads.csv", headers: true) do |row|
+  CSV.foreach("source_data/mpssc_trailheads.csv", headers: true) do |row|
 
     # MPSSC trailhead file fixes
     row["NAME"] = row["NAME"].gsub(/Indian Springs/, "Indian Spring")
