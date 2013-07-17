@@ -7,18 +7,19 @@
 # mpssc_traildata.csv -  MPSSC trail data - created by hand from public web site
 # mpssc_trailheads.csv - MPSSC trailhead metadata - created by hand
 
+# TODO: create new files as temp files
 
 all: segments trailheads traildata
 
-segments: summit_trail_segments.geojson
+segments: summit_trailsegments.geojson
 
 trailheads: summit_trailheads.geojson
 
 traildata: summit_traildata.csv
 
 clean: 
-	rm -f summit_trail_segments.geojson \
-	summit_trail_segments.csv \
+	rm -f summit_trailsegments.geojson \
+	summit_trailsegments.csv \
 	cvnp_trails.4326.csv \
 	mpssc_trails.4326.short_names.csv \
 	mpssc_trails.4326.csv \
@@ -27,11 +28,11 @@ clean:
 	summit_traildata.csv \
 	cvnp_trailheads.csv
 
-summit_trail_segments.geojson: summit_trail_segments.csv
-	ogr2ogr -f "GeoJSON" summit_trail_segments.geojson summit_trail_segments.csv
-	rm -f summit_trail_segments.csv
+summit_trailsegments.geojson: summit_trailsegments.csv
+	ogr2ogr -f "GeoJSON" summit_trailsegments.geojson summit_trailsegments.csv
+	rm -f summit_trailsegments.csv
 
-summit_trail_segments.csv: cvnp_trails.4326.csv mpssc_trails.4326.csv
+summit_trailsegments.csv: cvnp_trails.4326.csv mpssc_trails.4326.csv
 	ruby csv_segment_filter.rb
 
 # create 4326 CSV from ESRI file geodatabase
@@ -44,7 +45,7 @@ cvnp_trails.4326.csv: source_data/CUVA_CFA.gdb
 	-lco GEOMETRY=AS_WKT
 
 mpssc_trails.4326.csv: mpssc_trails.4326.short_names.csv
-	ruby mpssc_fix_segment_names.rb > mpssc_trails.4326.csv
+	ruby mpssc_fix_segment_names.rb mpssc_trails.4326.short_names.csv > mpssc_trails.4326.csv
 
 mpssc_trails.4326.short_names.csv: source_data/mpssc_trails2013/mpssc_trails2013a.shp
 	rm -f mpssc_trails.4326.csv
