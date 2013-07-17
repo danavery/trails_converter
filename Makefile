@@ -1,3 +1,13 @@
+# source files are in source_data/:
+
+# CUVA_CFA.gdb - Cuyahoga Valley National Park ESRI File Geodatabase - not currently included in repo
+# cvnp_traildata.csv - CVNP trail metadata - created by hand from public web site
+
+# mpssc_trails2013/ - Metro Parks Serving Summit County trail shapefile
+# mpssc_traildata.csv -  MPSSC trail data - created by hand from public web site
+# mpssc_trailheads.csv - MPSSC trailhead metadata - created by hand
+
+
 all: segments trailheads traildata
 
 segments: summit_trail_segments.geojson
