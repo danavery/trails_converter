@@ -15,7 +15,7 @@ POINT (-81.52165 41.12839),837 Cuyahoga St,Overlook,Oxbow,,MPSSC
 POINT (-81.520502 41.122035),837 Cuyahoga St,Oxbow,,,MPSSC
 POINT (-81.51703 41.12013),837 Cuyahoga St,Chuckery,,,MPSSC
 POINT (-81.51530 41.12174),837 Cuyahoga St,Highbridge,Chuckery,,MPSSC
-POINT (-81.61873 41.25351),3100 Brush Rd,Daffodill,,,MPSSC
+POINT (-81.61873 41.25351),3100 Brush Rd,Daffodil,,,MPSSC
 POINT (-81.63820 41.26834),3100 Brush Rd,Rock Creek,Old Mill,,MPSSC
 POINT (-81.590462 41.170528),2550 Martin Rd,Deer Run,Buckeye,,MPSSC
 POINT (-81.559130 41.135237),1400 Sand Run Parkway,Dogwood,Buckeye,Parkway Jogging,MPSSC
@@ -24,7 +24,7 @@ POINT (-81.546353 41.127668),1400 Sand Run Parkway,Parcours,Valley Link,Mingo,MP
 POINT (-81.575767 41.139413),1828 Smith Rd,Cherry Lane,Fernwood Loop,Seneca Trail,MPSSC
 POINT (-81.493474 41.120673),1160 Front St,Gorge,Glens,,MPSSC
 POINT (-81.494107 41.117690),1160 Front St,Highbridge,,,MPSSC
-POINT (-81.425496 41.129213),521 S. River Rd,Indian Springs Trail,,,MPSSC
+POINT (-81.425496 41.129213),521 S. River Rd,Indian Spring Trail,,,MPSSC
 POINT (-81.434774 41.130579),1088 North Ave,Meadow Trail,Meadow Loop,,MPSSC
 POINT (-81.480755 41.219715),331 Barlow Rd,Bike & Hike Trail,,,MPSSC
 POINT (-81.518917 41.255111),298 W Boston Mills Rd,Bike & Hike Trail,,,MPSSC
@@ -36,25 +36,25 @@ POINT (-81.563367 41.314619),685 Aurora Rd,Bike & Hike Trail,,,MPSSC
 POINT (-81.43798 41.14273),130 N. Main St,Bike & Hike Trail,,,MPSSC
 POINT (-81.433891 41.105824),245 Northeast Ave,Freedom Trail,,,MPSSC
 POINT (-81.392969 41.135252),1765 Northeast Ave,Freedom Trail,,,MPSSC
-POINT (-81.592710 41.023838),5 Fairview Ave,Towpath Trail,,,MPSSC
-POINT (-81.518198 41.087786),40 Beech St,Towpath Trail,,,MPSSC
-POINT (-81.54022 41.12754),1337 Merriman Rd,Towpath Trail,,,MPSSC
-POINT (-81.558474 41.262894),1508 Boston Mills Rd,Towpath Trail,,,MPSSC
-POINT (-81.575954 41.162158),2928 Riverview Rd,Towpath Trail,,,MPSSC
-POINT (-81.629303 40.929143),2749 North St,Towpath Trail,,,MPSSC
-POINT (-81.553752 41.229968),5779 Riverview Rd,Towpath Trail,Quarry,Cuyahoga,MPSSC
-POINT (-81.617853 40.946987),2328 Center Rd,Towpath Trail,,,MPSSC
-POINT (-81.572146 41.200302),2054 Bolanz Rd,Towpath Trail,,,MPSSC
-POINT (-81.578474 41.193935),4300 Riverview Rd,Towpath Trail,,,MPSSC
-POINT (-81.550500 41.243036),1648 Mill St,Towpath Trail,,,MPSSC
-POINT (-81.520309 41.079543),200 S. Main St,Towpath Trail,,,MPSSC
-POINT (-81.550441 41.023547),2740 Manchester Rd,Towpath Trail,,,MPSSC
-POINT (-81.528002 41.104551),499 Memorial Pkwy,Towpath Trail,,,MPSSC
-POINT (-81.518043 41.091517),248 Ferndale St,Towpath Trail,,,MPSSC
-POINT (-81.542936 41.058770),380 W. Crosier St,Towpath Trail,,,MPSSC
-POINT (-81.606765 40.978742),2445 Vanderhoof Rd,Towpath Trail,,,MPSSC
-POINT (-81.540233 41.039440),392 W Wilbeth Rd,Towpath Trail,,,MPSSC
-POINT (-81.607532 41.003828),33 Snyder Ave,Towpath Trail,,,MPSSC
+POINT (-81.592710 41.023838),5 Fairview Ave,Ohio & Erie Canal Towpath Trail,,,MPSSC
+POINT (-81.518198 41.087786),40 Beech St,Ohio & Erie Canal Towpath Trail,,,MPSSC
+POINT (-81.54022 41.12754),1337 Merriman Rd,Ohio & Erie Canal Towpath Trail,,,MPSSC
+POINT (-81.558474 41.262894),1508 Boston Mills Rd,Ohio & Erie Canal Towpath Trail,,,MPSSC
+POINT (-81.575954 41.162158),2928 Riverview Rd,Ohio & Erie Canal Towpath Trail,,,MPSSC
+POINT (-81.629303 40.929143),2749 North St,Ohio & Erie Canal Towpath Trail,,,MPSSC
+POINT (-81.553752 41.229968),5779 Riverview Rd,Ohio & Erie Canal Towpath Trail,Quarry,Cuyahoga,MPSSC
+POINT (-81.617853 40.946987),2328 Center Rd,Ohio & Erie Canal Towpath Trail,,,MPSSC
+POINT (-81.572146 41.200302),2054 Bolanz Rd,Ohio & Erie Canal Towpath Trail,,,MPSSC
+POINT (-81.578474 41.193935),4300 Riverview Rd,Ohio & Erie Canal Towpath Trail,,,MPSSC
+POINT (-81.550500 41.243036),1648 Mill St,Ohio & Erie Canal Towpath Trail,,,MPSSC
+POINT (-81.520309 41.079543),200 S. Main St,Ohio & Erie Canal Towpath Trail,,,MPSSC
+POINT (-81.550441 41.023547),2740 Manchester Rd,Ohio & Erie Canal Towpath Trail,,,MPSSC
+POINT (-81.528002 41.104551),499 Memorial Pkwy,Ohio & Erie Canal Towpath Trail,,,MPSSC
+POINT (-81.518043 41.091517),248 Ferndale St,Ohio & Erie Canal Towpath Trail,,,MPSSC
+POINT (-81.542936 41.058770),380 W. Crosier St,Ohio & Erie Canal Towpath Trail,,,MPSSC
+POINT (-81.606765 40.978742),2445 Vanderhoof Rd,Ohio & Erie Canal Towpath Trail,,,MPSSC
+POINT (-81.540233 41.039440),392 W Wilbeth Rd,Ohio & Erie Canal Towpath Trail,,,MPSSC
+POINT (-81.607532 41.003828),33 Snyder Ave,Ohio & Erie Canal Towpath Trail,,,MPSSC
 POINT (-81.528348 41.136298),1690 Cuyahoga St,Schumacher,Valley Trail,,MPSSC
 POINT (-81.517439 41.010922),40 Axline Ave,Walking,,,MPSSC
 POINT (-81.514891 41.012261),40 Axline Ave,Willow,Redwing,,MPSSC

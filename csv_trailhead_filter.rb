@@ -7,7 +7,7 @@ CSV.open("./summit_trailheads.csv", "w") do |csv|
   csv << ["NAME", "TRAIL1", "TRAIL2", "TRAIL3", "WKT", "SOURCE"]
   
   CSV.foreach("./cvnp_trailheads.csv", headers: true) do |row|
-    # correct each Trail_Assoc_[x] field
+    # correct each Trail_Assoc_[x] field -- should this be a separate task?
     (["Trail_Assoc_1", "Trail_Assoc_2", "Trail_Assoc_3"]).each do |trail|
       next if row[trail].nil?
 
@@ -21,10 +21,6 @@ CSV.open("./summit_trailheads.csv", "w") do |csv|
   end
 
   CSV.foreach("source_data/mpssc_trailheads.csv", headers: true) do |row|
-
-    # MPSSC trailhead file fixes
-    row["NAME"] = row["NAME"].gsub(/Indian Springs/, "Indian Spring")
-
     csv << [row["NAME"], row["TRAIL1"], row["TRAIL2"], row["TRAIL3"], row["WKT"], row["SOURCE"]]
   end
 end
