@@ -1,36 +1,31 @@
-NAME,LENGTH,SOURCE
-Old Carriage Trail,1,CVNP
-Stanford Trail,1,CVNP
-Brandywine Gorge Trail,1,CVNP
-Brandywine Falls Trail,1,CVNP
-Blue Hen Falls Trail,1,CVNP
-Haskell Run Trail,1,CVNP
-Boston Run Trail,1,CVNP
-Ledges Trail,1,CVNP
-Pine Grove Trail,1,CVNP
-Forest Point Trail,1,CVNP
-Crosscountry Trail,1,CVNP
-Lake Trail,1,CVNP
-Salt Run Trail,1,CVNP
-Tree Farm Trail,1,CVNP
-Oak Hill Trail,1,CVNP
-Plateau Trail,1,CVNP
-All Purpose Trail - Bedford Reservation,1,CVNP
-Bridal Veil Falls Trail,1,CVNP
-Hemlock Creek Loop Trail,1,CVNP
-All Purpose Trail - Brecksville Reservation,1,CVNP
-Chippewa Creek Trail,1,CVNP
-My Mountain Trail,1,CVNP
-Scenic Overlook Trail,1,CVNP
-Valley Stream Trail,1,CVNP
-Deer Lick Cave Trail,1,CVNP
-Wetmore Trail,1,CVNP
-Dickerson Run Trail,1,CVNP
-Tabletop Trail,1,CVNP
-Langes Run Trail,1,CVNP
-Butler's Trail,1,CVNP
-Valley Trail,1,CVNP
-Riding Run Trail,1,CVNP
-Perkins Trail,1,CVNP
-Bridle Trail - Brecksville Reservation,1,CVNP
-Ohio & Erie Canal Towpath Trail,1,NONE
+source,managing_agency,name,park_name,trailhead_name,trailhead_address,trailhead_city,trailhead_state,difficulty,length,hike_time,dogs,horses,bikes,access,trail_description,print_map_url,,,,
+CVNP,Cuyahoga Valley National Park,Ledges Trail,Cuyahoga Valley National Park,Ledges Parking Area,,Boston Heights,OH,Moderate,2.2,1.5 hours,,,,,,,,,http://www.nps.gov/cuva/planyourvisit/loader.cfm?csModule=security/getfile&PageID=185812,
+CVNP,Cuyahoga Valley National Park,Pine Grove Trail,Cuyahoga Valley National Park,Ledges Parking Area,,Boston Heights,OH,Moderate,2.2,1.25 hours,,,,,,,,,http://www.nps.gov/cuva/planyourvisit/loader.cfm?csModule=security/getfile&PageID=185812,
+CVNP,Cuyahoga Valley National Park,Forest Point Trail,Cuyahoga Valley National Park,Ledges Parking Area,,Boston Heights,OH,Easy,0.5,30 minutes,,,,,,,,,http://www.nps.gov/cuva/planyourvisit/loader.cfm?csModule=security/getfile&PageID=185812,
+CVNP,Cuyahoga Valley National Park,Crosscountry Trail,Cuyahoga Valley National Park,Kendell Lake,,Boston Heights,OH,Moderate,2.5, 1.5 hours,,,,,,,,,http://www.nps.gov/cuva/planyourvisit/loader.cfm?csModule=security/getfile&PageID=188081,
+CVNP,Cuyahoga Valley National Park,Lake Trail,Cuyahoga Valley National Park,Kendell Lake,,Boston Heights,OH,Easy,1,45 minutes,,,,,,,,,http://www.nps.gov/cuva/planyourvisit/upload/SaltRun_Lake_WEB2009.pdf,
+CVNP,Cuyahoga Valley National Park,Salt Run Trail,Cuyahoga Valley National Park,Kendell Lake,,Boston Heights,OH,Moderate to difficult,3.25, 2 hours,,,,,,,,,,
+CVNP,Cuyahoga Valley National Park,Tree Farm Trail,Cuyahoga Valley National Park,Off Major Road,,Peninsula,OH,Easy to moderate,2.75,1.5 hours,,,,,,,,,http://www.nps.gov/cuva/planyourvisit/loader.cfm?csModule=security/getfile&PageID=185819,
+CVNP,Cuyahoga Valley National Park,Oak Hill Trail ,Cuyahoga Valley National Park,Oak Hill Day Use Area Trails,,Peninsula,OH, Easy,1.5,45 minutes,,,,,,,,,BROKEN LINK (http://www.nps.gov/cuva/planyourvisit/loader.cfm?csModule=security/getfile&PageID=185818),
+CVNP,Cuyahoga Valley National Park,Plateau Trail,Cuyahoga Valley National Park,Oak Hill Day Use Area Trails,,Peninsula,OH,Moderate to Difficult,4.5,3 hours,,,,,,,,,BROKEN LINK (http://www.nps.gov/cuva/planyourvisit/loader.cfm?csModule=security/getfile&PageID=185818),
+CVNP,Cuyahoga Valley National Park,Ohio & Erie Canal Towpath Trail,Cuyahoga Valley National Park,,,,OH,Easy,19.5,10 hours,,,,,,,,,http://www.nps.gov/cuva/planyourvisit/upload/Towpath5Web-2.pdf,
+CVNP,Cuyahoga Valley National Park,Old Carriage Trail,Cuyahoga Valley National Park,Red Lock Trailhead,,,OH,Moderate to difficult,5.25,2.5 hours,,,,,,,,,http://www.nps.gov/cuva/planyourvisit/upload/OldCarriage_WEB2009.pdf,
+CVNP,Cuyahoga Valley National Park,Stanford Trail,Cuyahoga Valley National Park,Trails Between Jaite & Boston,,,OH,Moderate,1.5,1 hour,,,,,,,,,http://www.nps.gov/cuva/planyourvisit/upload/Brandywine-Falls-Area-Trail-Map-2012.pdf,
+CVNP,Cuyahoga Valley National Park,Brandywine Gorge,Cuyahoga Valley National Park,Trails Between Jaite & Boston,,,OH,Moderate,1.25,1 hour,,,,,,,,,http://www.nps.gov/cuva/planyourvisit/upload/Brandywine-Falls-Area-Trail-Map-2012.pdf,
+CVNP,Cuyahoga Valley National Park,Brandywine Falls,Cuyahoga Valley National Park,Trails Between Jaite & Boston,,Boston Heights,OH,Easy,0.125,20 minutes,,,,,,,,,http://www.nps.gov/cuva/planyourvisit/upload/Brandywine-Falls-Area-Trail-Map-2012.pdf,"Elevation Change: Minimal and wheelchair accessible to the first boardwalk overlook.- A spur off the main boardwalk has numerous steps.
+
+"
+CVNP,Cuyahoga Valley National Park,Blue Hen Falls Trail,Cuyahoga Valley National Park,Trails Between Jaite & Boston,,Boston,OH,Easy to moderate,1.2,1 hour,,,,,,,,,WRONG LINK http://www.nps.gov/cuva/planyourvisit/upload/Buckeye_Valley_North_WEB2009.pdf,
+CVNP,Cuyahoga Valley National Park,Haskell Run Trai,Cuyahoga Valley National Park,From Happy Days Lodge,,Boston Heights,OH,Easy,0.5,30 minutes,,,,,,,,,http://www.nps.gov/cuva/planyourvisit/loader.cfm?csModule=security/getfile&PageID=185812,
+CVNP,Cuyahoga Valley National Park,Boston Run Trail,Cuyahoga Valley National Park,From Happy Days Lodge,,Boston Heights,OH, Moderate,3.4,2 hours,,,,,,,,,http://www.nps.gov/cuva/planyourvisit/loader.cfm?csModule=security/getfile&PageID=185815,
+CVNP,Cleveland Metro Parks,All Purpose Trail,Cuyahoga Valley National Park,Bedford Reservation,,,OH,Moderate,5.25,2.25 hour,,,,,,,,,Broken Link:http://www.clemetparks.com/pdf/reservations/trailmaps/bedfordtrail.pdf,
+CVNP,Cleveland Metro Parks,Bridal Veil Falls,Cuyahoga Valley National Park,Bedford Reservation,,,OH,Easy,0.25,15 minutes,,,,,,,,,Broken Link:http://www.clemetparks.com/pdf/reservations/trailmaps/bedfordtrail.pdf,
+CVNP,Cleveland Metro Parks,Hemlock Creek Loop Trail,Cuyahoga Valley National Park,Bedford Reservation,,,OH,Easy,0.6,30 minutes,,,,,,,,,Broken Link:http://www.clemetparks.com/pdf/reservations/trailmaps/bedfordtrail.pdf,
+CVNP,Cleveland Metro Parks,All Purpose Trail,Cuyahoga Valley National Park,Bedford Reservation,,Brecksville,OH,Easy to moderate,4.5,2.25 hours,,,,,,,,,Broken Link http://www.clemetparks.com/pdf/reservations/trailmaps/Brecksville%20trail%20map.pdf,
+CVNP,Cleveland Metro Parks,Chippewa Creek Trail,Cuyahoga Valley National Park,Bedford Reservation,,Brecksville,OH,Moderate,2.5,1.5 hours,,,,,,,,,Broken Link http://www.clemetparks.com/pdf/reservations/trailmaps/Brecksville%20trail%20map.pdf,
+CVNP,Cleveland Metro Parks,My Mountain Trail,Cuyahoga Valley National Park,Bedford Reservation,,Brecksville,OH,Easy,1.5,50 minutes,,,,,,,,,Broken Link http://www.clemetparks.com/pdf/reservations/trailmaps/Brecksville%20trail%20map.pdf,
+CVNP,Cleveland Metro Parks,Scenic Overlook Trail,Cuyahoga Valley National Park,Bedford Reservation,,Brecksville,OH,Easy,0.25,15 minutes,,,,,,,,,Broken Link http://www.clemetparks.com/pdf/reservations/trailmaps/Brecksville%20trail%20map.pdf,
+CVNP,Cleveland Metro Parks,Valley Stream Trail,Cuyahoga Valley National Park,Bedford Reservation,,Brecksville,OH,Easy,0.5,30 minutes,,,,,,,,,Broken Link http://www.clemetparks.com/pdf/reservations/trailmaps/Brecksville%20trail%20map.pdf,
+CVNP,Cleveland Metro Parks,Deer Lick Cave Trail,Cuyahoga Valley National Park,Bedford Reservation,,Brecksville,OH,Moderate to difficult,4,2.5 hours,,,,,,,,,Broken Link http://www.clemetparks.com/pdf/reservations/trailmaps/Brecksville%20trail%20map.pdf,
+CVNP,"Metro Parks, Serving Summit County",Buttonwood Trail,Cuyahoga Valley National Park,Furnace Run Metro Park,,Brecksville,OH,Moderate to difficult,1,45 minutes,,,,,,,,,http://www.summitmetroparks.org/ParksAndTrails/FurnaceRun.aspx,
+CVNP,Cuyahoga Valley National Park,Buckeye Traill,Cuyahoga Valley National Park,,,,OH,,,,,,,,,,,,,
