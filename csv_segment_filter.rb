@@ -3,7 +3,7 @@ require "csv"
 # combine trail segments CSV files into summit_trail_segments.csv
 
 CSV.open("./summit_trailsegments.csv", "ab") do |csv|
-  csv << ["NAME1", "NAME2", "NAME3", "LENGTH", "SOURCE", "STEWARD", "WKT"]
+  csv << ["trail1", "trail2", "trail3", "LENGTH", "SOURCE", "STEWARD", "WKT"]
   CSV.foreach("./cvnp_trails.4326.csv", headers: true) do |row|
     csv << [row["NAME1"], row["NAME2"], row["NAME3"], row["SHAPE_Leng"], "CVNP", row["Maintained"], row["WKT"]]
   end
