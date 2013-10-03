@@ -2,10 +2,4 @@ old
 *.geojson
 *.old
 info
-cvnp_trails.4326.csv
-mpssc_trails.4326.csv
-mpssc_trails.4326.short_names.csv
-summit_traildata.csv
-summit_traildata_test.csv
-summit_traildata_test_2.csv
-cvnp_trailheads.csv
+*.csv

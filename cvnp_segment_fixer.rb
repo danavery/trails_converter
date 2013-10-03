@@ -24,6 +24,5 @@ input.headers.each do |header|
   fixed_headers.push header
 end
 
-p $stdout.class
 new_csv = CSV.new($stdout, write_headers: true, headers: fixed_headers) 
 new_rows.each{|row| new_csv << row}
