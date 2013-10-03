@@ -11,23 +11,27 @@
 
 all: segments trailheads traildata
 
-segments: summit_trailsegments.geojson
+segments: cvnp_segments.geojson mpssc_segments.geojson
 
-trailheads: summit_trailheads.geojson
+trailheads: cvnp_trailheads.geojson mpssc_trailheads.geojson
 
-traildata: summit_traildata.csv
+traildata: cvnp_traildata.csv mpssc_traildata.csv
 
 # TODO: fix this
 clean: 
 	rm -f summit_trailsegments.geojson \
 	summit_trailsegments.csv \
-	cvnp_trails.4326.csv \
-	mpssc_trails.4326.short_names.csv \
-	mpssc_trails.4326.csv \
-	summit_trailheads.csv \
-	summit_trailheads.geojson \
-	summit_traildata.csv \
-	cvnp_trailheads.csv
+	build/* \
+	*.csv \
+	*.geojson \
+	cvnp_segments.geojson \
+	cvnp_trailheads.geojson \
+	cvnp_traildata.csv \
+	mpssc_segments.geojson \
+	mpssc_trailheads.geojson \
+	mpssc_traildata.csv
+
+
 
 # create 4326 CSV from shapefile
 cvnp_segments_orig.csv: source_data/cvnp_sep_2013/Trail_Segments_NPS_CFA.shp
@@ -49,25 +53,75 @@ cvnp_segments.geojson: cvnp_segments_fixed.csv
 	cvnp_segments.geojson \
 	cvnp_segments_fixed.csv
 
-cvnp_trailheads_orig.csv: source_data/cvnp_sep_2013/Trailheads_NPS_CFA.shp
+cvnp_trailheads_orig.csv: source_data/cvnp_sep_2013/Trailheads_NPS_CFA_28Kfix.shp
 	rm -f cvnp_trailheads_orig.csv
 	ogr2ogr -f "CSV" \
 	-t_srs EPSG:4326 \
 	-where "OBJECTID_1 != 0" \
-	cvnp_trailheads.csv \
+	cvnp_trailheads_orig.csv \
 	source_data/cvnp_sep_2013/Trailheads_NPS_CFA_28Kfix.shp \
 	-lco GEOMETRY=AS_WKT
 
 cvnp_trailheads_fixed.csv: cvnp_trailheads_orig.csv
-	ruby cvnp_trailhead_fixer.rb cvnp_trailheads_orig.csv > cvnp_segments_fixed.csv
+	ruby cvnp_trailhead_fixer.rb cvnp_trailheads_orig.csv > cvnp_trailheads_fixed.csv
 
 cvnp_trailheads.geojson: cvnp_trailheads_fixed.csv
 	rm -f cvnp_trailheads.geojson
 	ogr2ogr -f "GeoJSON" \
+	-s_srs EPSG:4326 \
 	-t_srs EPSG:4326 \
 	cvnp_trailheads.geojson \
 	cvnp_trailheads_fixed.csv
 
+cvnp_traildata.csv: source_data/cvnp_sep_2013/cvnp_traildata.csv
+	cp source_data/cvnp_sep_2013/cvnp_traildata.csv .
+
+mpssc_segments_orig.csv: source_data/mpssc_trails_2013_09/cfa_mpssc_trails_10_2013.shp
+	rm -f mpssc_segments_orig.csv
+	ogr2ogr -f "CSV" -nlt PROMOTE_TO_MULTI \
+	-t_srs EPSG:4326 \
+	-s_srs EPSG:3734 \
+	mpssc_segments_orig.csv \
+	source_data/mpssc_trails_2013_09/cfa_mpssc_trails_10_2013.shp \
+	-lco GEOMETRY=AS_WKT
+
+mpssc_segments_fixed.csv: mpssc_segments_orig.csv
+	ruby mpssc_segment_fixer.rb mpssc_segments_orig.csv > mpssc_segments_fixed.csv
+
+mpssc_segments.geojson: mpssc_segments_fixed.csv
+	rm -f mpssc_segments.geojson
+	ogr2ogr -f "GeoJSON" \
+	-s_srs EPSG:4326 \
+	-t_srs EPSG:4326 \
+	mpssc_segments.geojson \
+	mpssc_segments_fixed.csv
+
+mpssc_trailheads_orig.csv: source_data/mpssc_trails_2013_09/cfa_mpssc_trailheads2013.shp
+	rm -f mpssc_trailheads_orig.csv
+	ogr2ogr -f "CSV" \
+	-s_srs EPSG:3734 \
+	-t_srs EPSG:4326 \
+	mpssc_trailheads_orig.csv \
+	source_data/mpssc_trails_2013_09/cfa_mpssc_trailheads2013.shp \
+	-lco GEOMETRY=AS_WKT
+
+mpssc_trailheads_fixed.csv: mpssc_trailheads_orig.csv
+	ruby mpssc_trailhead_fixer.rb mpssc_trailheads_orig.csv > mpssc_trailheads_fixed.csv
+
+mpssc_trailheads.geojson: mpssc_trailheads_fixed.csv
+	rm -f mpssc_trailheads.geojson
+	ogr2ogr -f "GeoJSON" \
+	-s_srs EPSG:4326 \
+	-t_srs EPSG:4326 \
+	mpssc_trailheads.geojson \
+	mpssc_trailheads_fixed.csv
+
+mpssc_traildata.csv: source_data/mpssc_trails_2013_09/cfa_mpssc_traildata.csv
+	cp source_data/mpssc_trails_2013_09/cfa_mpssc_traildata.csv .
+
+
+
+# not used below here for now
 summit_trailsegments.geojson: summit_trailsegments.csv
 	rm -f summit_trailsegments.geojson
 	ogr2ogr -f "GeoJSON" summit_trailsegments.geojson summit_trailsegments.csv
