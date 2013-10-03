@@ -34,6 +34,7 @@ cvnp_segments_orig.csv: source_data/cvnp_sep_2013/Trail_Segments_NPS_CFA.shp
 	rm -f cvnp_segments_orig.csv # ogr2ogr can't seem to overwrite this file
 	ogr2ogr -f "CSV" -nlt PROMOTE_TO_MULTI \
 	-t_srs EPSG:4326 \
+	-where "OBJECTID_1 != 0" \ # removing extra 28K empty records in latest data
 	cvnp_segments_orig.csv \
 	source_data/cvnp_sep_2013/Trail_Segments_NPS_CFA.shp \
 	-lco GEOMETRY=AS_WKT
