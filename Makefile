@@ -73,8 +73,8 @@ cvnp_trailheads.geojson: cvnp_trailheads_fixed.csv
 	cvnp_trailheads.geojson \
 	cvnp_trailheads_fixed.csv
 
-cvnp_traildata.csv: source_data/cvnp_sep_2013/cvnp_traildata.csv
-	cp source_data/cvnp_sep_2013/cvnp_traildata.csv .
+cvnp_traildata.csv: source_data/cvnp_sep_2013/CVNP_traildata_orig.csv
+	ruby traildata_fixer.rb source_data/cvnp_sep_2013/CVNP_traildata_orig.csv > cvnp_traildata.csv
 
 mpssc_segments_orig.csv: source_data/mpssc_trails_2013_09/cfa_mpssc_trails_10_2013.shp
 	rm -f mpssc_segments_orig.csv
@@ -117,7 +117,7 @@ mpssc_trailheads.geojson: mpssc_trailheads_fixed.csv
 	mpssc_trailheads_fixed.csv
 
 mpssc_traildata.csv: source_data/mpssc_trails_2013_09/cfa_mpssc_traildata.csv
-	cp source_data/mpssc_trails_2013_09/cfa_mpssc_traildata.csv .
+	ruby traildata_fixer.rb source_data/mpssc_trails_2013_09/cfa_mpssc_traildata.csv > mpssc_traildata.csv
 
 
 

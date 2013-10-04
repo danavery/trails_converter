@@ -4,12 +4,12 @@ input = CSV.read(ARGV[0], headers: true)
 new_rows = []
 fixed_headers = []
 
-yes_no_fields = %w(accessible roadbike hike mtnbike equestrian xcntryski)
+yes_no_fields = %w(accessible dogs roadbike hike mtnbike equestrian xcntryski)
 
 input.each do |row|
   row.each do |key, value|
     # puts key
-    if key =~ /trail\d/ && !value.nil?
+    if key =~ /trail\d/i && !value.nil?
       value.sub!(/_.+$/, "")
       row[key] = "Ohio & Erie Canal Towpath Trail" if value == "Towpath"
     end
