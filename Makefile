@@ -11,6 +11,10 @@
 
 all: segments trailheads traildata
 
+cvnp: cvnp_segments.geojson cvnp_trailheads.geojson cvnp_traildata.csv
+
+mpssc: mpssc_segments.geojson mpssc_trailheads.geojson mpssc_traildata.csv
+	
 segments: cvnp_segments.geojson mpssc_segments.geojson
 
 trailheads: cvnp_trailheads.geojson mpssc_trailheads.geojson
@@ -34,12 +38,12 @@ clean:
 
 
 # create 4326 CSV from shapefile
-cvnp_segments_orig.csv: source_data/cvnp_sep_2013/Trail_Segments_NPS_CFA.shp
+cvnp_segments_orig.csv: source_data/cvnp_oct_2013/trail_segments_nps_cfa.shp
 	rm -f cvnp_segments_orig.csv # ogr2ogr can't seem to overwrite this file
 	ogr2ogr -f "CSV" -nlt PROMOTE_TO_MULTI \
 	-t_srs EPSG:4326 \
 	cvnp_segments_orig.csv \
-	source_data/cvnp_sep_2013/Trail_Segments_NPS_CFA.shp \
+	source_data/cvnp_oct_2013/trail_segments_nps_cfa.shp \
 	-lco GEOMETRY=AS_WKT
 
 cvnp_segments_fixed.csv: cvnp_segments_orig.csv
@@ -53,13 +57,13 @@ cvnp_segments.geojson: cvnp_segments_fixed.csv
 	cvnp_segments.geojson \
 	cvnp_segments_fixed.csv
 
-cvnp_trailheads_orig.csv: source_data/cvnp_sep_2013/Trailheads_NPS_CFA_28Kfix.shp
+cvnp_trailheads_orig.csv: source_data/cvnp_oct_2013/CFA_Trailheads.shp
 	rm -f cvnp_trailheads_orig.csv
 	ogr2ogr -f "CSV" \
 	-t_srs EPSG:4326 \
 	-where "OBJECTID_1 != 0" \
 	cvnp_trailheads_orig.csv \
-	source_data/cvnp_sep_2013/Trailheads_NPS_CFA_28Kfix.shp \
+	source_data/cvnp_oct_2013/CFA_Trailheads.shp \
 	-lco GEOMETRY=AS_WKT
 
 cvnp_trailheads_fixed.csv: cvnp_trailheads_orig.csv

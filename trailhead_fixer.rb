@@ -1,4 +1,4 @@
-require "csv"
+                         require "csv"
 
 input = CSV.read(ARGV[0], headers: true)
 new_rows = []
@@ -17,10 +17,11 @@ input.each do |row|
     if yes_no_fields.include?(key)
       firstchar = value[0].downcase
       if firstchar == "y" || firstchar == "t"
-        row[key] = "y"
+        value = "y"
       elsif firstchar == "n" || firstchar == "f"
-        row[key] = "n"
+        value = "n"
       end
+      row[key] = value
     end
   end
   new_rows.push row
